@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "category": {
+        "id": 1,
+        "name": "dogs"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "https://placedog.net/800/640?id=31"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "cutey"
+        }
+    ],
+    "status": "available"
+}

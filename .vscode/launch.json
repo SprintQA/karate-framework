@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "karate",
+            "name": "Karate (debug): Standalone",
+            "request": "launch",
+            "feature": "${command:karateRunner.getDebugFile}",
+            "karateOptions": "",
+            "karateCli": "${config:karateRunner.karateJar.commandLineArgs} -d"
+        }
+    ]
+}

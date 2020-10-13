@@ -1,0 +1,49 @@
+# log files
+*.log
+
+# coverage folder
+/coverage/*
+
+# reports
+/.nyc_output/*
+/target/*
+
+# VS Code project files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+**/.history
+
+# Eclipse project files
+.settings
+.project
+.classpath
+target/
+test-output/
+.orig
+
+# IntelliJ project files
+.DS_Store
+*.iml
+.idea/
+*.log
+out/
+
+# Compiled class file
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+report.json
