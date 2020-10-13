@@ -41,7 +41,7 @@ These instructions will get you a copy of this framework up and running on your 
 
 ## Project Structure
 
-### src/test/java/demo
+### src/test/java/sprintqa
 
 - contains **api/petstore** which has a feature file for petstore API testing scenarios
 - contains **samples** which has sample feature file to learn about how to write descriptive Karate scenarios
