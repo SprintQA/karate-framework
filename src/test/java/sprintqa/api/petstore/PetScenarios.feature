@@ -6,7 +6,6 @@ Feature: Pet Scenarios
         * configure headers = {Content-Type:'#(contentType)'}
         * def pet = read ('./payloads/pet.json');
         
-    @sanity
     Scenario: Users are able to add pets to the system
         Given path '/pet'
         And request pet
@@ -16,15 +15,13 @@ Feature: Pet Scenarios
         And match response.name == "doggie"
         And match response.status == "available"
 
-    @sanity
     Scenario: Users are able to retrieve pet's information
         Given path '/pet/1'
         When method get
         Then status 200
         And match response.status == "available"
 
-    @sanity
-    Scenario: Users are able to update an existing pet
+     Scenario: Users are able to update an existing pet
         Given path '/pet'
         And request pet
         * set pet.tags[0].name = 'fluffy'
@@ -36,8 +33,7 @@ Feature: Pet Scenarios
         And match response.tags[0].name == "fluffy"
         And match response.status == "sold"
 
-    #@sanity
-    Scenario: Users are able to delete a pet
+     Scenario: Users are able to delete a pet
         Given path '/pet/1'
         * header api_key = 'special-key'
         When method delete
